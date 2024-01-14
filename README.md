@@ -4,11 +4,20 @@ My goals in order for this project
 - GitHub Actions
     - Actions builds and saves docker image to AWS ECS container registry and Docker hub
     - Actions deploys to AWS Fargate
+    - Use IaC for actions?
+    - Add multistage support: dev, staging, master
 - AWS
     - configure DNS for api.testdriven.ai to access that AWS Fargate containier
     - set up a program to poll and monitor the traffic to my container
     - add autoscaling of containers
     - **track billing usage and ensure to turn everything off afterwards**
+    - integrate with AWS Aurora or Cosmos DB
 - Flask
     - add security and clean routing
     - add autoscaling
+    - add linter and code formatter as an actions step
+    - obsfucate the python code
+    - semantic-versioning
+    - dependency update bot: manages requirements.txt for the docker container??? Woah! 
+- Docker
+    - Secure the docker container so people can't read it
