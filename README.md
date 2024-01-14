@@ -13,14 +13,14 @@ My goals in order for this project
     - **track billing usage and ensure to turn everything off afterwards**
     - integrate with AWS Aurora or Cosmos DB
 - Flask
-    - add security and clean routing
+    - add security and use a clean flask routing extension: explore the possible ones and make an opinion
     - add autoscaling
     - add linter and code formatter as an actions step
     - obsfucate the python code
     - semantic-versioning
     - dependency update bot: manages requirements.txt for the docker container??? Woah! 
+    - handle migrations with sql alchemy and alembic
 - Docker
     - Secure the docker container so people can't read it
 
-
-THen do it all for GitLab CI/CD
+Then repeat for GitLab CI/CD
