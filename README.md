@@ -21,3 +21,6 @@ My goals in order for this project
     - dependency update bot: manages requirements.txt for the docker container??? Woah! 
 - Docker
     - Secure the docker container so people can't read it
+
+
+THen do it all for GitLab CI/CD
