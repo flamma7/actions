@@ -24,4 +24,8 @@ My goals in order for this project
     - Secure the docker container so people can't read it
 
 Then repeat for GitLab CI/CD
-test test2 test3 test4 test5
+
+Workflow with Linear
+- start an issue by getting the branch name: Ctrl+Shift+.
+- first commit put 'part of issue-id' to move it to in-progress
+- when done, create a PR and merge it
