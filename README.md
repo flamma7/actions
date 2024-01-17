@@ -2,7 +2,7 @@ Practicing GitHub Actions for CI/CD
 
 My goals in order for this project
 - GitHub Actions
-    - Actions builds and saves docker image to AWS ECS container registry and Docker hub
+    - Actions builds and saves docker image to AWS ECS container registry and Docker hub [DONE]
     - Actions deploys to AWS Fargate
     - [DONE] Use IaC for actions?
     - Add multistage support: dev, staging, master
