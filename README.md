@@ -4,7 +4,7 @@ My goals in order for this project
 - GitHub Actions
     - Actions builds and saves docker image to AWS ECS container registry and Docker hub
     - Actions deploys to AWS Fargate
-    - Use IaC for actions?
+    - [DONE] Use IaC for actions?
     - Add multistage support: dev, staging, master
 - AWS
     - configure DNS for api.testdriven.ai to access that AWS Fargate containier
