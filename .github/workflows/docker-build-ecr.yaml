@@ -1,0 +1,27 @@
+name: Deploy to Amazon ECR
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Login to Amazon ECR
+      uses: aws-actions/amazon-ecr-login@v1
+      with:
+        access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+        secret-access-key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
+        region: us-east-1
+
+    - name: Build, tag, and push image to Amazon ECR
+      uses: docker/build-push-action@v2
+      with:
+        push: true
+        tags: 056669260652.dkr.ecr.us-east-1.amazonaws.com/actions:latest
